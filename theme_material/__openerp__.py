@@ -1,10 +1,10 @@
 {
-    'name': 'Default Theme',
-    'description': 'Default website theme to showcase customization possibilities.',
-    'category': 'Theme/Hidden',
-    'sequence': 1000,
-    'version': '1.0',
-    'author': 'Odoo S.A.',
+    'name': 'Theme Material Frontend',
+    'description': 'Front end theme based on material design',
+    'category': 'Theme',
+    'sequence': 2000,
+    'version': '0.1',
+    'author': 'Vauxoo',
     'depends': ['website'],
     'data': [
         'views/templates.xml',
