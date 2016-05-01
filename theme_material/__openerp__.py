@@ -8,6 +8,7 @@
     'depends': ['website'],
     'data': [
         'views/templates.xml',
+        'views/assets.xml',
     ],
     'images': [
         'static/description/cover.png',

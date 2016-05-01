@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+    <template name="Theme Material" id="material_css" inherit_id="website.assets_frontend">
+      <xpath expr="link[last()]" position="after">
+        <!-- Material Design fonts -->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
+        <link href="/theme_material/static/src/bootstrap-material-design/dist/css/bootstrap-material-design.css" rel="stylesheet" type="text/css"/>
+        <link href="/theme_material/static/src/bootstrap-material-design/dist/css/ripples.css" rel="stylesheet" type="text/css"/>
+      </xpath>
+    </template>
+    <template name="Assets JS" id="material_js" inherit_id="website.assets_frontend">
+      <xpath expr="." position="inside">
+        <script type="text/javascript" src="/theme_material/static/src/bootstrap-material-design/dist/js/material.js"/>
+        <script type="text/javascript" src="/theme_material/static/src/bootstrap-material-design/dist/js/ripples.js"/>
+        <script type="text/javascript">
+          $.material.init();
+        </script>
+      </xpath>
+    </template>
+  </data>
+</openerp>
